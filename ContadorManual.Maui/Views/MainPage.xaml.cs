@@ -6,25 +6,23 @@ public partial class MainPage : ContentPage
 {
     private Contador _contador;
 
-	public MainPage()
-	{
-		InitializeComponent();
-        _contador = new Contador();
-        LabelConteo.Text = _contador._Conteo.ToString();
-	}
-
-    private void OnContarButton_Clicked(object sender, EventArgs e)
+    public MainPage()
     {
-        _contador.Contar();
-        LabelConteo.Text = _contador._Conteo.ToString();
-
+        InitializeComponent();
+        _contador = new Contador();
+        BindingContext = _contador;
 
     }
 
-    private void OnReiniciarButton_Clicked(object sender, EventArgs e)
+    private void OnContarButtonClicked(object sender, EventArgs e)
+    {
+        _contador.Contar();
+
+    }
+
+    private void OnReiniciarButtonClicked(object sender, EventArgs e)
     {
         _contador.Reiniciar();
-        LabelConteo.Text = _contador._Conteo.ToString();
 
     }
 }

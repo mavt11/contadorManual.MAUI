@@ -3,50 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ContadorManual.Maui.Views.MainPage"
              Title="Contador manual">
-
     <VerticalStackLayout
         Spacing="16"
         Margin="16"
         Padding="12">
-        
         <Label 
-            Text="Conteo"
-            HorizontalOptions="Fill"
-            VerticalOptions="Fill"
-            FontSize="Small"/>
+         Text="conteo:"            
+         HorizontalOptions="Fill"
+         FontSize="Small"
+        />
         <Border
-            Stroke="Gray"
-            StrokeThickness="2">
-            <Label
-                  Text="10"
-                  Margin="16"
-                  Padding="24"
-                  HorizontalOptions="Center"
-                  VerticalOptions="Start"
-                  FontSize="Large"
-                  FontAttributes="Bold"
-                x:Name="LabelConteo"/>
+           Stroke="Gray"
+           StrokeThickness="2">
+            <Label 
+            Text="{Binding Path=Conteo }"
+            Margin="16"
+            Padding="24"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            FontSize="Large"
+            FontAttributes="Bold"
+            />
         </Border>
-
-        
-
         <HorizontalStackLayout
-              HorizontalOptions="Center"
-              Spacing="36"
-              Margin="0,24,0,0">
+         HorizontalOptions="Center"
+         Spacing="36"
+         Margin="0,24,0,0">
             <Button
-                 Text="Contar"
-                Clicked="OnContarButton_Clicked"/>
-
+          Text="contar"
+          Clicked="OnContarButtonClicked"/>
             <Button 
-              Text="Reiniciar"
-                Clicked="OnReiniciarButton_Clicked"/>
+          Text="reiniciar"
+          Clicked="OnReiniciarButtonClicked"/>
         </HorizontalStackLayout>
-       
-
-
     </VerticalStackLayout>
 
-  
+
 
 </ContentPage>
