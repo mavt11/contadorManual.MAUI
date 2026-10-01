@@ -22,7 +22,7 @@
             HorizontalOptions="Center"
             VerticalOptions="Start"
             FontSize="Large"
-            FontAttributes="Bold"
+             FontAttributes="Bold"
             />
         </Border>
         <HorizontalStackLayout
@@ -44,15 +44,15 @@
         </HorizontalStackLayout>
 
         <HorizontalStackLayout
-         HorizontalOptions="Center"
-         Spacing="36"
-         Margin="0,24,0,0">
+           HorizontalOptions="Center"
+           Spacing="36"
+           Margin="0,24,0,0">
             <Button
-          Text="contar"
-          Clicked="OnContarButtonClicked"/>
+           Text="contar"
+           Clicked="OnContarButtonClicked"/>
             <Button 
-          Text="reiniciar"
-          Clicked="OnReiniciarButtonClicked"/>
+              Text="reiniciar"
+              Clicked="OnReiniciarButtonClicked"/>
         </HorizontalStackLayout>
     </VerticalStackLayout>
 

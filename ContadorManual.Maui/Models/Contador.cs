@@ -30,7 +30,7 @@ namespace ContadorManual.Maui.Models
             {
                 if (_incremento != value)
                 {
-                 _incremento= value;
+                    _incremento = value;
 
                 }
             }
@@ -45,7 +45,7 @@ namespace ContadorManual.Maui.Models
 
         public void Contar()
         {
-            Conteo+=Incremento;
+            Conteo += Incremento;
         }
 
         public void Reiniciar()
@@ -65,4 +65,3 @@ namespace ContadorManual.Maui.Models
 }
 
 
-    
